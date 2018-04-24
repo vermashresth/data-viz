@@ -7,3 +7,9 @@ ggplot(data = mpg, aes(x = displ, y = hwy)) +
 
 ggplot(data = mpg,aes(x = displ, y = hwy)) + 
   geom_point(color = "blue")
+
+ggplot(data = mpg, aes(y = displ, x = hwy)) + 
+  geom_point(mapping = aes(color = cty))
+
+ggplot(data = mpg, aes(y = displ, x = hwy)) + 
+  geom_point(mapping = aes(colour = displ < 5))
